@@ -1,7 +1,7 @@
 # Bumper Ball! <img src="images/logo.png" width="100"/>
 
 <p align="center">
-Virtual reality meets the real world &mdash; and there are cars and a ball!
+Virtual reality meets the real world on the soccer field (with cars!)
 </p>
 
 - [Meet Bumper Ball](#meet-bumper-ball)
