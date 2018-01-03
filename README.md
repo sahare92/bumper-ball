@@ -4,39 +4,44 @@
 Virtual reality meets the real world on the soccer field (with cars!)
 </p>
 
-- [Meet Bumper Ball](#meet-bumper-ball)
-- [Playing the Game](#playing-the-game)
-- [Setup and Installation](#setup-and-installation)
+- [What is Bumper Ball?](#what-is-bumper-ball)
+- [Why Play Bumper Ball?](#why-play-bumper-ball)
+- [How to Play](#how-to-play)
+- [How to Setup the Game](#how-to-setup-the-game)
 
-## Meet Bumper Ball
+## What is Bumper Ball?
 
-Bumper Ball is a game that introduces a new way of integrating the digital and physical worlds.
-A virtual soccer field, ball, and other objects, are projected as an image onto a real-world game board.
-You use remote-control activated toy cars to move the virtual ball around the board and score goals.
-The game distinguishes between the cars, identifies their movement, direction, and velocity, and reacts accordingly, in real time.
+Bumper Ball is a revolutionary game that takes augmented reality to the next level by introducing a new way of integrating the digital and physical worlds:
+a virtual soccer field, a ball, and other objects, are projected as images on to a real-world game board.
+You use remote-control-activated toy cars to move the virtual ball around the board and score goals.
+A camera is used to distinguish between the cars, based on their colors, and identify the cars' movement, direction, and velocity.
+The game reacts to the changes in the physical world and changes the virtual game board accordingly, in real time.
 
-### Who Should Play Bumper Ball?
+## Why Play Bumper Ball?
 
-Bumper Ball is for everyone!
+Because it's great fun for everyone!
 
-- [x] Enjoy some wholesome fun with the entire family
+- [x] Enjoy pure wholesome fun with the entire family
 - [x] Save money on a babysitter while you get things done
+- [x] Get your daily dose of exercise from the comfort of your own home
 - [x] Alleviate stress and bond with colleagues at the office
 - [x] Play drunken Bumper Ball with legal-age friends (just don't drink and drive!)
 
-### Playing the Game
+## How to Play
 
-Use your car to score goals by advancing the virtual game ball into your opponent's goal, and block your opponent from scoring goals.
-On the way, avoid the obstacles that appear on the board, and collect gifts that provide you with advantages over your opponent.
+Two players battle it out on the virtual soccer field.
+Each player uses a remote control to drive a toy car across the game board.
+The objective is to use your car to hit the virtual game ball into your opponent's goal and score goals, while preventing your opponent from scoring goals.
+On the way, avoid the obstacles that appear on the board, and pick up power-up gifts that provide you with advantages over your opponent (such as making their goal larger).
 The winner is the player who scores the most goals within the allocated time.
 
-## Setup and Installation
+## How to Setup the Game
 
 ### Components
 
 Bumper Ball includes the following components:
 
-- The Bumper Ball software binary (**"Bumper Ball"**) &mdash; for example, **BumperBall.exe** for Windows.
+- The Bumper Ball software binary (**"Bumper Ball"**) &mdash; for example, **BumperBall.exe** on Windows.
 
 - A digital USB camera (**"the camera"**).
 
