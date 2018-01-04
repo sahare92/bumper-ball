@@ -1,14 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bumper-ball", "Assembly-CSharp.csproj", "{E621492F-B6B1-5EE8-CE0B-AEEE1AD6EE92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{E621492F-B6B1-5EE8-CE0B-AEEE1AD6EE92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E621492F-B6B1-5EE8-CE0B-AEEE1AD6EE92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E621492F-B6B1-5EE8-CE0B-AEEE1AD6EE92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E621492F-B6B1-5EE8-CE0B-AEEE1AD6EE92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

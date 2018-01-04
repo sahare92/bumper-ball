@@ -13,8 +13,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Background
+  - Game
   - 
   - 
   - 
@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1468247015
+    locked: 1
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Game
+    uniqueID: 3568665935
+    locked: 0
+  - name: Court
+    uniqueID: 618633907
+    locked: 1
