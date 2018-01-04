@@ -163,7 +163,7 @@ public class ServerScript: MonoBehaviour {
 
 			if (isNullLocation (new_vect)) {
 				hidden [i] = true;
-				return;
+				continue;
 			}
 
 			updateRotation (i, old_vect, new_vect);
