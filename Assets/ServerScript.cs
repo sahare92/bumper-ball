@@ -72,18 +72,18 @@ public class ServerScript: MonoBehaviour {
 		}
 	}
 
-	// OnGUI
-	void OnGUI()
-	{
-		Rect rectObj=new Rect(40,10,200,400);
-		GUIStyle style = new GUIStyle();
-		style.alignment = TextAnchor.UpperLeft;
-		GUI.Box(rectObj,"# UDPReceive\n127.0.0.1 "+port+" #\n"
-			+ "shell> nc -u 127.0.0.1 : "+port+" \n"
-			+ "\nLast Packet: \n"+ lastReceivedUDPPacket
-			,style);
-	}
-
+//	// OnGUI
+//	void OnGUI()
+//	{
+//		Rect rectObj=new Rect(40,10,200,400);
+//		GUIStyle style = new GUIStyle();
+//		style.alignment = TextAnchor.UpperLeft;
+//		GUI.Box(rectObj,"# UDPReceive\n127.0.0.1 "+port+" #\n"
+//			+ "shell> nc -u 127.0.0.1 : "+port+" \n"
+//			+ "\nLast Packet: \n"+ lastReceivedUDPPacket
+//			,style);
+//	}
+//
 	// init
 	private void init()
 	{
@@ -141,8 +141,6 @@ public class ServerScript: MonoBehaviour {
 	}
 
 	public float parseStringToFloat(string str) {
-		print ("DEBUG");
-		print(str);
 		return Single.Parse (str, CultureInfo.InvariantCulture);
 	}
 
