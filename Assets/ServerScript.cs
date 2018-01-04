@@ -171,6 +171,6 @@ public class ServerScript: MonoBehaviour {
 	public void updateVelocity(int car_id, Vector2 old_vect, Vector2 new_vect) {
 		float distance = Vector2.Distance (old_vect, new_vect);
 		int generated_velocity = (int)((distance / 0.01) * 10);
-		game_object.setCarVelocity (car_id, generated_velocity);
+		velocity [car_id] = generated_velocity;
 	}
 }
