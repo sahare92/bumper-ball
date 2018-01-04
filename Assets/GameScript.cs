@@ -37,7 +37,6 @@ public class GameScript : MonoBehaviour {
 		players_rigid_bodies[0] = players_objects[0].GetComponent<Rigidbody2D>();
 		players_rigid_bodies[1] = players_objects[1].GetComponent<Rigidbody2D>();
 		disc_rigid_body = GameObject.Find ("Disc").GetComponent<Rigidbody2D>();
-		pos = new CarPosition(0,5,10);
 
 		Application.targetFrameRate = 100;
 	}
@@ -62,10 +61,10 @@ public class GameScript : MonoBehaviour {
 	}
 
 	public void hideCar(int car_id) {
-		players_objects [car_id].GetComponent<Renderer> ().enabled = false;
+		players_objects [car_id].SetActive (false);
 	}
 
 	public void showCar(int car_id) {
-		players_objects [car_id].GetComponent<Renderer> ().enabled = true;
+		players_objects [car_id].SetActive (true);
 	}
 }
