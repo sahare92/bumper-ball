@@ -60,11 +60,7 @@ public class GameScript : MonoBehaviour {
 		players_rigid_bodies [car_id].AddRelativeForce (velocity_vec, ForceMode2D.Force);
 	}
 
-	public void hideCar(int car_id) {
-		players_objects [car_id].SetActive (false);
-	}
-
-	public void showCar(int car_id) {
-		players_objects [car_id].SetActive (true);
+	public void setCarVisibility(int car_id, bool is_hidden) {
+		players_objects [car_id].SetActive (is_hidden);
 	}
 }

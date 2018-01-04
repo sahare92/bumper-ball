@@ -67,6 +67,7 @@ public class ServerScript: MonoBehaviour {
 				game_object.setCarPosition (i, x [i], y [i]);
 				game_object.setCarRotation (i, rotation [i]);
 				game_object.setCarVelocity (i, velocity [i]);
+				game_object.setCarVisibility (i, hidden [i]);
 			}
 		}
 	}
@@ -161,7 +162,6 @@ public class ServerScript: MonoBehaviour {
 			var old_vect = new Vector2 (x [i], y [i]);
 
 			if (isNullLocation (new_vect)) {
-				game_object.hideCar (i);
 				hidden [i] = true;
 				return;
 			}
@@ -174,7 +174,7 @@ public class ServerScript: MonoBehaviour {
 			y[i] = attr[i*2 + 1];
 
 			if (hidden [i]) {
-				game_object.showCar (i);
+				hidden [i] = false;
 			}
 		}
 	}
