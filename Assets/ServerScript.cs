@@ -30,6 +30,7 @@ public class ServerScript: MonoBehaviour {
 	public float[] y;
 	public float[] rotation;
 	public float[] velocity;
+	public bool[] hidden;
 	public bool loaded;
 
 	// start from unity3d
@@ -43,6 +44,9 @@ public class ServerScript: MonoBehaviour {
 		y = new float[2];
 		rotation = new float[2];
 		velocity = new float[2];
+		hidden = new bool[2];
+		hidden [0] = false;
+		hidden [1] = false;
 		x [0] = -5;
 		x [1] = 5;
 		y [0] = 0;
@@ -152,13 +156,15 @@ public class ServerScript: MonoBehaviour {
 		}
 
 		for(int i = 0; i <= 1; i++){
-			// Check that the player is inside the field
-			if (attr [i * 2] == 0 && attr [i * 2 + 1] == 0) {
-				return;
-			}
 
 			var new_vect = new Vector2 (attr[i*2], attr[i*2 + 1]);
 			var old_vect = new Vector2 (x [i], y [i]);
+
+			if (isNullLocation (new_vect)) {
+				game_object.hideCar (i);
+				hidden [i] = true;
+				return;
+			}
 
 			updateRotation (i, old_vect, new_vect);
 			updateVelocity (i, old_vect, new_vect);
@@ -166,7 +172,15 @@ public class ServerScript: MonoBehaviour {
 			// update the position
 			x[i] = attr[i*2];
 			y[i] = attr[i*2 + 1];
+
+			if (hidden [i]) {
+				game_object.showCar (i);
+			}
 		}
+	}
+
+	public bool isNullLocation(Vector2 vect) {
+		return (vect.x == 0 && vect.y == 0);
 	}
 
 	public void updateRotation(int car_id, Vector2 old_vect, Vector2 new_vect) {
@@ -175,7 +189,7 @@ public class ServerScript: MonoBehaviour {
 
 	public void updateVelocity(int car_id, Vector2 old_vect, Vector2 new_vect) {
 		float distance = Vector2.Distance (old_vect, new_vect);
-		float generated_velocity = (float)((distance / 0.01) * 3);
+		float generated_velocity = (float)((distance / 0.01) * 2);
 		velocity [car_id] = generated_velocity;
 	}
 }

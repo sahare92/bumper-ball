@@ -44,11 +44,6 @@ public class GameScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
-		//Moving Forward/Back
-		if (Input.GetKey (KeyCode.UpArrow)) {
-			setCarVelocity (0, 10);
-		}
 	}
 
 	public void setCarPosition(int car_id, float x, float y) {
@@ -64,5 +59,13 @@ public class GameScript : MonoBehaviour {
 	public void setCarVelocity(int car_id, float velocity) {
 		var velocity_vec = new Vector2 (velocity, 0);
 		players_rigid_bodies [car_id].AddRelativeForce (velocity_vec, ForceMode2D.Force);
+	}
+
+	public void hideCar(int car_id) {
+		players_objects [car_id].GetComponent<Renderer> ().enabled = false;
+	}
+
+	public void showCar(int car_id) {
+		players_objects [car_id].GetComponent<Renderer> ().enabled = true;
 	}
 }

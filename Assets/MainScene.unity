@@ -213,7 +213,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.3726134
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -375,7 +375,7 @@ Transform:
   m_GameObject: {fileID: 503642489}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children:
   - {fileID: 1906538318}
   - {fileID: 350426264}
@@ -497,7 +497,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.023005784, y: -2.64855}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -508,7 +508,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.3680924, y: 6.2971}
   m_EdgeRadius: 0
 --- !u!212 &832962137
 SpriteRenderer:
@@ -620,6 +620,9 @@ PolygonCollider2D:
       - {x: -0.4675343, y: -3.9292297}
       - {x: -0.5, y: -0.5}
       - {x: -0.5, y: 0.5}
+      - {x: -0.79667366, y: 4.781474}
+      - {x: -0.0048238244, y: 4.823136}
+      - {x: 0.8045907, y: 4.891794}
       - {x: 0.5, y: 0.5}
       - {x: 0.5, y: -0.5}
 --- !u!212 &850173714
@@ -1048,7 +1051,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.024922997, y: 2.1832674}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1059,7 +1062,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.5252995, y: 5.3665338}
   m_EdgeRadius: 0
 --- !u!212 &1325560515
 SpriteRenderer:
@@ -1704,7 +1707,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.5, y: -0.5}
+    - - {x: 0.93632996, y: -6.331754}
+      - {x: -0.90298545, y: -6.496105}
+      - {x: -0.5, y: -0.5}
       - {x: -0.5, y: 0.5}
       - {x: -0.47358084, y: 5.4144645}
       - {x: -0.46005794, y: 1.4683696}
