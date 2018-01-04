@@ -61,6 +61,6 @@ public class GameScript : MonoBehaviour {
 	}
 
 	public void setCarVisibility(int car_id, bool is_hidden) {
-		players_objects [car_id].SetActive (is_hidden);
+		players_objects [car_id].SetActive (!is_hidden);
 	}
 }
