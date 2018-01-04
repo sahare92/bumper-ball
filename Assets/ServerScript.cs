@@ -165,6 +165,9 @@ public class ServerScript: MonoBehaviour {
 		var new_vect = new Vector2 (new_x, new_y);
 		var old_vect = new Vector2 (x [car_id], y [car_id]);
 		rotation[car_id] = Vector2.Angle(old_vect, new_vect);
+		print ("Distance:");
+		print (car_id);
+		print(Vector2.Distance(old_vect, new_vect));
 	}
 
 	public void updateVelocity(int car_id, float new_x, float new_y) {
