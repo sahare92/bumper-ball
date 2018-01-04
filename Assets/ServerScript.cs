@@ -156,7 +156,7 @@ public class ServerScript: MonoBehaviour {
 			var old_vect = new Vector2 (x [i], y [i]);
 
 			updateRotation (i, old_vect, new_vect);
-			updateVelocity (i, attr[i*2], attr[i*2 + 1]);
+			updateVelocity (i, old_vect, new_vect);
 
 			// update the position
 			x[i] = attr[i*2];
@@ -169,8 +169,8 @@ public class ServerScript: MonoBehaviour {
 	}
 
 	public void updateVelocity(int car_id, Vector2 old_vect, Vector2 new_vect) {
-		var distance = Vector2.Distance (old_vect, new_vect);
-		int generated_velocity = int.Parse((distance / 0.01) * 10);
+		float distance = Vector2.Distance (old_vect, new_vect);
+		int generated_velocity = (int)((distance / 0.01) * 10);
 		game_object.setCarVelocity (car_id, generated_velocity);
 	}
 }
