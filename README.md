@@ -21,7 +21,7 @@ Visit our [web site](http://iguazio.staging.wpengine.com/bumper-ball/) to find o
 Bumper Ball is a revolutionary game that takes augmented reality to the next level by introducing a new way of integrating the digital and physical worlds:
 a virtual soccer field, a ball, and other objects, are projected as images on to a real-world game board.
 You use remote-control-activated toy cars to move the virtual ball around the board and score goals.
-A camera is used to distinguish between the cars, based on their colors, and identify the cars' movement, direction, and velocity.
+A camera is used to distinguish between the cars, based on their colors, and identify the cars' position and movement, including direction and velocity.
 The game reacts to the changes in the physical world and changes the virtual game board accordingly, in real time.
 
 ## Why Play Bumper Ball?
