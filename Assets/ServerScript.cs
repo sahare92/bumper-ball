@@ -152,7 +152,10 @@ public class ServerScript: MonoBehaviour {
 		}
 
 		for(int i = 0; i <= 1; i++){
-			updateRotation (i, attr[i*2], attr[i*2 + 1]);
+			var new_vect = new Vector2 (attr[i*2], attr[i*2 + 1]);
+			var old_vect = new Vector2 (x [i], y [i]);
+
+			updateRotation (i, old_vect, new_vect);
 			updateVelocity (i, attr[i*2], attr[i*2 + 1]);
 
 			// update the position
@@ -161,16 +164,13 @@ public class ServerScript: MonoBehaviour {
 		}
 	}
 
-	public void updateRotation(int car_id, float new_x, float new_y) {
-		var new_vect = new Vector2 (new_x, new_y);
-		var old_vect = new Vector2 (x [car_id], y [car_id]);
+	public void updateRotation(int car_id, Vector2 old_vect, Vector2 new_vect) {
 		rotation[car_id] = Vector2.Angle(old_vect, new_vect);
-		print ("Distance:");
-		print (car_id);
-		print(Vector2.Distance(old_vect, new_vect));
 	}
 
-	public void updateVelocity(int car_id, float new_x, float new_y) {
-		
+	public void updateVelocity(int car_id, Vector2 old_vect, Vector2 new_vect) {
+		var distance = Vector2.Distance (old_vect, new_vect);
+		int generated_velocity = int.Parse((distance / 0.01) * 10);
+		game_object.setCarVelocity (car_id, generated_velocity);
 	}
 }
