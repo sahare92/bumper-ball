@@ -29,7 +29,7 @@ public class ServerScript: MonoBehaviour {
 	public float[] x;
 	public float[] y;
 	public float[] rotation;
-	public int[] velocity;
+	public float[] velocity;
 	public bool loaded;
 
 	// start from unity3d
@@ -42,7 +42,7 @@ public class ServerScript: MonoBehaviour {
 		x = new float[2];
 		y = new float[2];
 		rotation = new float[2];
-		velocity = new int[2];
+		velocity = new float[2];
 		x [0] = -5;
 		x [1] = 5;
 		y [0] = 0;
@@ -152,6 +152,11 @@ public class ServerScript: MonoBehaviour {
 		}
 
 		for(int i = 0; i <= 1; i++){
+			// Check that the player is inside the field
+			if (attr [i * 2] == 0 && attr [i * 2 + 1] == 0) {
+				return;
+			}
+
 			var new_vect = new Vector2 (attr[i*2], attr[i*2 + 1]);
 			var old_vect = new Vector2 (x [i], y [i]);
 
@@ -170,7 +175,7 @@ public class ServerScript: MonoBehaviour {
 
 	public void updateVelocity(int car_id, Vector2 old_vect, Vector2 new_vect) {
 		float distance = Vector2.Distance (old_vect, new_vect);
-		int generated_velocity = (int)((distance / 0.01) * 10);
+		float generated_velocity = (float)((distance / 0.01) * 3);
 		velocity [car_id] = generated_velocity;
 	}
 }

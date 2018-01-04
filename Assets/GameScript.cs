@@ -61,7 +61,7 @@ public class GameScript : MonoBehaviour {
 		players_rigid_bodies[car_id].rotation = rotation;
 	}
 
-	public void setCarVelocity(int car_id, int velocity) {
+	public void setCarVelocity(int car_id, float velocity) {
 		var velocity_vec = new Vector2 (velocity, 0);
 		players_rigid_bodies [car_id].AddRelativeForce (velocity_vec, ForceMode2D.Force);
 	}
