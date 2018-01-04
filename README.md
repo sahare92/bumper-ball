@@ -60,7 +60,7 @@ Bumper Ball includes the following components:
 
 - Two cardboard cut-outs (**"the game board"**).
 
-- Two remote-control (RC) cars (**"the cars"**).
+- Two remote-control (RC) cars (**"the cars"**) with their remote controls (batteries not included).
 
 In addition, you will need a computer that runs the game, and projector with a connection to your computer.
 
@@ -77,6 +77,10 @@ Follow these steps to install Bumper Ball:
 4.  Connect the computer to the camera using the USB cable.
 
 5.  Connect the computer to a projector and project the virtual game image on to the game board. 
+
+6.  Insert batteries into your toy cars, and place them on the game board.
+
+You're all set. Just run the game and enjoy!
 
 ___
 &copy; 2018 Bumper Boiz, All Rights Reserved
